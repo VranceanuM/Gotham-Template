@@ -26,9 +26,12 @@
     opacity: 0.6;
 }
 #about{
-    margin:200px 0;
+    margin:150px 0;
 }
-
+img#contactMe{
+    width: 300px;
+    margin-bottom: 50px;
+}
 
 @media (max-width:600px){
     .main-header{

@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gotham City</title>
 </head>
-<body>
+<body id="home" class="scrollspy">
  <header class="main-header">
    <div class="primary-overlay">
      <div class="navbar-fixed">
@@ -29,6 +29,9 @@
                    </li>
                    <li>
                     <a href="#villants">Villants</a>
+                  </li>
+                  <li>
+                    <a href="#about">Services</a>
                   </li>
                   <li>
                     <a href="#testimonial">Testimonial</a>
@@ -88,7 +91,7 @@
    </div>
  </header>
  <!-- Villants -->
- <section id="villants" class="section-most-wanted">
+ <section id="villants" class="section-most-wanted scrollspy">
     <div class="container">
       <div class="row">
         <h4 class="center">
@@ -154,7 +157,7 @@
              </div>
       </div>
       <!-- About -->
-      <section id="about">
+      <section id="about" class="scrollspy">
        
           <div class="row">
             <div class="col s12 m6">
@@ -186,7 +189,7 @@
           </div>
        
       </section>
-      <section id="testimonial" class="white-text center">
+      <section id="testimonial" class="white-text center scrollspy">
        
           <h2 class="black-text">What our clients say</h2>
           <div class="row">
@@ -232,6 +235,16 @@
           </div>
         
       </section>
+      <section id="contact" class="scrollspy">
+        <h4 class="center">Contact Us 24/7</h4>
+        <div class="container center">
+          <div class="row">
+             <img src="./img/contact.jpg" class="circle" id="contactMe" alt="">
+          </div>
+        </div>
+              <!-- Switch -->
+
+      </section>
       <footer>
       <section class="section-about center">
       
@@ -250,7 +263,7 @@
     $(document).ready(function () {
       // Custom JS & jQuery here
       $('.button-collapse').sideNav();
-
+      $('.scrollspy').scrollSpy();
       //scollfire
       const options = [
         {
@@ -264,7 +277,7 @@
           }
         },
         {
-          selector:'.navbar-fixed',offset:1000, callback: function(){
+          selector:'.navbar-fixed',offset:1500, callback: function(){
            $('nav').removeClass('transparent');
            $('nav').addClass('blue-grey darken-3');
           }
