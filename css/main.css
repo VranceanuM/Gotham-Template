@@ -25,3 +25,13 @@
     left: 47%;
     opacity: 0.6;
 }
+#about{
+    margin:200px 0;
+}
+
+
+@media (max-width:600px){
+    .main-header{
+        height: 50vh;
+    }
+}

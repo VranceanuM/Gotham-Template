@@ -46,9 +46,9 @@
      </div>
      <!-- sidenav -->
      <ul class="side-nav" id="mobile-nav">
-       <li>
-         <a class="divider"></a>
-       </li>
+    
+         <a><img src="./img/batman.jpg" class="responsive-img img-bat"></a>
+       
       <li>
         <a href="#home">Home</a>
       </li>
@@ -56,13 +56,16 @@
        <a href="#villants">Villants</a>
      </li>
      <li>
+        <a href="#about">About</a>
+      </li>
+     <li>
        <a href="#testimonial">Testimonial</a>
      </li>
      <li>
        <a href="#contact">Contact </a>
      </li>
      <li>
-       <a href="#" class="btn blue">Download</a>
+       <a href="#" class="btn black">Download</a>
      </li>
      </ul>
      <!-- showcase -->
@@ -84,6 +87,147 @@
      </div>
    </div>
  </header>
+ <!-- Villants -->
+ <section id="villants" class="section-most-wanted">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+          The Moust Dangerous Villants
+        </h4>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/black.jpg" alt="">
+              <span class="card-title">Black Cat</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+           <div class="card">
+             <div class="card-image">
+               <img src="img/lady.jpg" alt="">
+             
+             </div>
+             <div class="card-content">
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+             </div>
+           </div>
+         </div>
+         <div class="col s12 m3">
+             <div class="card">
+               <div class="card-image">
+                 <img src="img/maleficent.jpg" alt="">
+                 
+               </div>
+               <div class="card-content">
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+               </div>
+             </div>
+           </div>
+           <div class="col s12 m3">
+               <div class="card">
+                 <div class="card-image">
+                   <img src="img/mystik.png" alt="">
+                   
+                 </div>
+                 <div class="card-content">
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ut commodi nam quos qui! Magni.</p>
+                 </div>
+               </div>
+             </div>
+      </div>
+      <!-- About -->
+      <section id="about">
+       
+          <div class="row">
+            <div class="col s12 m6">
+              <img src="./img/original.jpg" class="responsive-img" alt="">
+            </div>
+            <div class="col s12 m4 offset-m2 ">
+               <ul class="collection with-header z-depth-4">
+                 <li class="collection-header">
+                   <h5>Services</h5>
+                 </li>
+                 <li class="collection-item">
+                   <i class="material-icons left" > check</i>
+                   Fighting the bad guys
+                 </li>
+                 <li class="collection-item">
+                    <i class="material-icons left" > check</i>
+                    Keep You Safe
+                  </li>
+                  <li class="collection-item">
+                      <i class="material-icons left" > check</i>
+                     Helping old people
+                    </li>
+                    <li class="collection-item">
+                        <i class="material-icons left" > check</i>
+                       And free hugs
+                      </li>
+                </ul>
+            </div>
+          </div>
+       
+      </section>
+      <section id="testimonial" class="white-text center">
+       
+          <h2 class="black-text">What our clients say</h2>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card grey lighten-4 black-text z-depth-4">
+                <div class="card-content">
+                  <p>
+                    <em>I don't like you ! please stop calling me ! I am not your friend we are not Justice League</em>
+                  </p>
+                </div>
+                <div class="card-action">
+                  <p>Clark Kent </p>
+                  <img src="/img/super.jpg" class="circle responsive-img" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card grey lighten-4 black-text z-depth-4">
+                  <div class="card-content">
+                    <p>
+                        <em>Hey Bat You forgot me in the car for more then 2 weeks I relly need to bathroom</em>
+                    </p>
+                  </div>
+                  <div class="card-action">
+                      <p>Robin Who!?? </p>
+                    <img src="/img/robin.jpg" class="circle responsive-img" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                  <div class="card grey lighten-4 black-text z-depth-4">
+                    <div class="card-content">
+                      <p>
+                        <em>Hey Bruce I clean your costume  don't make plans for tonight! You will not get out!</em>
+                      </p>
+                    </div>
+                    <div class="card-action">
+                      <p>Alfred </p>
+                      <img src="/img/alfred.jpg" class="circle responsive-img" alt="">
+                    </div>
+                  </div>
+                </div>
+          </div>
+        
+      </section>
+      <footer>
+      <section class="section-about center">
+      
+          <h2>We Are Batman Team</h2>
+          <p class="flow-text"> We keep city's clean from villants </p>
+          <img src="./img/batman.jpg" class="responsive-img" alt="">
+   
+      </section>
+    </footer>
+
  
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -92,6 +236,27 @@
     $(document).ready(function () {
       // Custom JS & jQuery here
       $('.button-collapse').sideNav();
+
+      //scollfire
+      const options = [
+        {
+          selector:'.main-text',offset:0, callback: function(el){
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector:'#villants',offset:0, callback: function(el){
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector:'.navbar-fixed',offset:1000, callback: function(){
+           $('nav').removeClass('transparent');
+           $('nav').addClass('blue-grey darken-3');
+          }
+        }
+      ];
+      Materialize.scrollFire(options);
     });
   </script>
 </body>
