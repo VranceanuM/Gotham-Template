@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gotham City</title>
+</head>
+<body>
+ <header class="main-header">
+   <div class="primary-overlay">
+     <div class="navbar-fixed">
+       <nav class="transparent">
+         <div class="container">
+           <div class="nav-wrapper">
+             <a href="#home" class="brand-logo">Gotham</a>
+             <a href="#" data-activates="mobile-nav" class="button-collapse">
+               <i class="material-icons">menu</i>
+             </a>
+             <ul class="right hide-on-med-and-down">
+                   <li>
+                     <a href="#home">Home</a>
+                   </li>
+                   <li>
+                    <a href="#villants">Villants</a>
+                  </li>
+                  <li>
+                    <a href="#testimonial">Testimonial</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn blue">Download</a>
+                  </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+     </div>
+     <!-- sidenav -->
+     <ul class="side-nav" id="mobile-nav">
+       <li>
+         <a class="divider"></a>
+       </li>
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+       <a href="#villants">Villants</a>
+     </li>
+     <li>
+       <a href="#testimonial">Testimonial</a>
+     </li>
+     <li>
+       <a href="#contact">Contact </a>
+     </li>
+     <li>
+       <a href="#" class="btn blue">Download</a>
+     </li>
+     </ul>
+     <!-- showcase -->
+     <div class="showcase container">
+       <div class="row">
+         <div class="col s12 main-text">
+           <h5>The city without villants</h5>
+           <h2>Right Place To Enjoy</h2>
+           <p class="flow-text">Your Life and to rise your children</p>
+           <br>
+           <a href="#villants" class="btn btn-large white black-text">
+             Find out more
+           </a>
+           <a href="#contact" class="white-text">
+             <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </header>
+ 
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Custom JS & jQuery here
+      $('.button-collapse').sideNav();
+    });
+  </script>
+</body>
+
+</html>
